@@ -201,12 +201,20 @@ body {
         width: 0%;
     }
 }
-@media screen and (max-width: 500px){
+
+@media screen and (max-width:550px) {
     .nav {
         text-align: center;
-        width: 100%;
+        width: 90%;
     }
-
+    .outerBox {
+        height: 60%;
+        width: 90%;
+    }
+    
+    .innerBox {
+        font-size: 2rem;
+    }
     .heading strong {
         font-size: 2rem;
     }
@@ -214,7 +222,9 @@ body {
     .scoreLi {
         font-size: 1rem;
     }
+
 }
+
 
 @media screen and (max-width: 770px) {
     .nav {
@@ -228,7 +238,7 @@ body {
     }
 }
 
-@media screen and (max-width:370px) {
+@media screen and (max-width:400px) {
     .nav {
         width: 100%;
     }
@@ -236,8 +246,8 @@ body {
     .outerBox {
         gap: 0.7%;
         padding: 0.3rem;
-        height: 40%;
-        width: 40%;
+        height: 30%;
+        width: 70%;
     }
     
     .innerBox {
@@ -249,20 +259,7 @@ body {
 }
 
 
-@media screen and (max-width:500px) {
-    .nav {
-        width: 100%;
-    }
-    .outerBox {
-        max-height: 60%;
-        width: 90%;
-    }
-    
-    .innerBox {
-        font-size: 2rem;
-    }
 
-}
 
 @media screen and (max-width:280px) {
     .nav {
