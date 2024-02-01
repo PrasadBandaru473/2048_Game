@@ -239,7 +239,7 @@ body {
         height: 40%;
         width: 40%;
     }
-    
+
     .innerBox {
         height: 20%;
         width: 22%;
@@ -257,7 +257,7 @@ body {
         max-height: 60%;
         width: 90%;
     }
-    
+
     .innerBox {
         font-size: 2rem;
     }
@@ -275,7 +275,7 @@ body {
     .outerBox {
         height: 250px;
     }
-    
+
     .innerBox {
         /* border: 1px solid #0A090C; */
         width: 22%;
