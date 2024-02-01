@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="nav">
+        <ul>
+            <li class="stats">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-file-question instructIcon">
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                    <path d="M10 10.3c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2" />
+                    <path d="M12 17h.01" />
+                </svg>
+            </li>
+            <li class="heading">
+                <strong>2048 Game</strong>
+            </li>
+            <li class="scoreLi">
+                <strong>Score</strong>
+                <p class="score">0</p>
+            </li>
+        </ul>
+    </header>
+    <div class="instructions">
+        <div class="closeInstructions"> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </div>
+        <h3>How to Play</h3>
+        <p class="matter">Combine tiles of the same number in an attempt to create a tile with the value 2048. </p>
+           <p class="matter"> Pressing the arrow keys or swiping across the game board will move all tiles in the direction of the key
+            pressed/swipe. After all the tiles are done moving a new tile with the value of 2 or 4 will be created in a
+            random empty cell. </p>
+            <p class="matter"> Two tiles with the same number will merge when they collide to create a single tile with double the value.
+        </p>
+        <p class="matter">  The game is over when there are no valid ways for you to move the tiles.
+        </p>
+        <span></span>
+        <div class="dir">
+        <p class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-big-left-dash">
+                <path d="M19 15V9" />
+                <path d="M15 15h-3v4l-7-7 7-7v4h3v6z" />
+            </svg>swipe left or use arrow left key to combime tiles to the left</p>
+        <p class="icons"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-big-right-dash">
+                <path d="M5 9v6" />
+                <path d="M9 9h3V5l7 7-7 7v-4H9V9z" />
+            </svg>swipe right or use arrow right key to combime tiles to the right</p>
+        <p class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-big-up-dash">
+                <path d="M9 19h6" />
+                <path d="M9 15v-3H5l7-7 7 7h-4v3H9z" />
+            </svg>swipe up or use arrow up key to combime tiles to the top</p>
+        <p class="icons"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-big-down-dash">
+                <path d="M15 5H9" />
+                <path d="M15 9v3h4l-7 7-7-7h4V9h6z" />
+            </svg>swipe down or use arrow down key to combime tiles to the bottom</p>
+        </div>
+    </div> 
+    <div class="overlay blur"></div>
+    <div class="GameEndTextBox">
+        <h1 class="loosingText displayNone">You Lost</h1>
+        <h1 class="winningText displayNone">You Won</h1>
+    </div>  
+    <div class="outerBox">
+        <div class="innerBox box1"></div>
+        <div class="innerBox box2"></div>
+        <div class="innerBox box3"></div>
+        <div class="innerBox box4"></div>
+        <div class="innerBox box5"></div>
+        <div class="innerBox box6"></div>
+        <div class="innerBox box7"></div>
+        <div class="innerBox box8"></div>
+        <div class="innerBox box9"></div>
+        <div class="innerBox box10"></div>
+        <div class="innerBox box11"></div>
+        <div class="innerBox box12"></div>
+        <div class="innerBox box13"></div>
+        <div class="innerBox box14"></div>
+        <div class="innerBox box15"></div>
+        <div class="innerBox box16"></div>
+    </div> 
+    <button class="restart"><h1>Restart</h1></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
